@@ -14,6 +14,8 @@
 		76B64AD4252BB8DE00867FE3 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B64AD2252BB8DE00867FE3 /* MainScreenViewController.xib */; };
 		76B64ADB252BBA0600867FE3 /* DetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B64AD9252BBA0600867FE3 /* DetailScreenViewController.swift */; };
 		76B64ADC252BBA0600867FE3 /* DetailScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B64ADA252BBA0600867FE3 /* DetailScreenViewController.xib */; };
+		76B64AE1252BBC0400867FE3 /* SerieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B64ADF252BBC0400867FE3 /* SerieCollectionViewCell.swift */; };
+		76B64AE2252BBC0400867FE3 /* SerieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B64AE0252BBC0400867FE3 /* SerieCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		76B64AD2252BB8DE00867FE3 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
 		76B64AD9252BBA0600867FE3 /* DetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewController.swift; sourceTree = "<group>"; };
 		76B64ADA252BBA0600867FE3 /* DetailScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailScreenViewController.xib; sourceTree = "<group>"; };
+		76B64ADF252BBC0400867FE3 /* SerieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieCollectionViewCell.swift; sourceTree = "<group>"; };
+		76B64AE0252BBC0400867FE3 /* SerieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerieCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		76B64AD0252BB8BE00867FE3 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				76B64ADE252BBBE700867FE3 /* Cells */,
 				76B64AD1252BB8DE00867FE3 /* MainScreenViewController.swift */,
 				76B64AD2252BB8DE00867FE3 /* MainScreenViewController.xib */,
 			);
@@ -84,6 +89,15 @@
 				76B64ADA252BBA0600867FE3 /* DetailScreenViewController.xib */,
 			);
 			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		76B64ADE252BBBE700867FE3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				76B64ADF252BBC0400867FE3 /* SerieCollectionViewCell.swift */,
+				76B64AE0252BBC0400867FE3 /* SerieCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +161,7 @@
 				76B64ADC252BBA0600867FE3 /* DetailScreenViewController.xib in Resources */,
 				76B64AC1252BB6AA00867FE3 /* Assets.xcassets in Resources */,
 				76B64AD4252BB8DE00867FE3 /* MainScreenViewController.xib in Resources */,
+				76B64AE2252BBC0400867FE3 /* SerieCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +175,7 @@
 				76B64ADB252BBA0600867FE3 /* DetailScreenViewController.swift in Sources */,
 				76B64AB8252BB6A700867FE3 /* AppDelegate.swift in Sources */,
 				76B64AD3252BB8DE00867FE3 /* MainScreenViewController.swift in Sources */,
+				76B64AE1252BBC0400867FE3 /* SerieCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
