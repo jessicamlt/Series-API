@@ -10,6 +10,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailScreenViewController" customModule="SeriesAPI" customModuleProvider="target">
             <connections>
+                <outlet property="backdropImageView" destination="HFI-IE-V4K" id="B72-Sr-K83"/>
+                <outlet property="countryLabel" destination="fUX-wC-66v" id="JNP-qK-sVF"/>
+                <outlet property="favoriteButton" destination="s0B-7T-fJW" id="Zwj-a6-Lm0"/>
+                <outlet property="genresLabel" destination="8RZ-WM-XFg" id="j9u-G2-wnQ"/>
+                <outlet property="overviewTextView" destination="qgV-Yo-ZI7" id="6M2-Tl-PCF"/>
+                <outlet property="releaseLabel" destination="wDd-Gc-hhg" id="5aN-57-axw"/>
+                <outlet property="titleLabel" destination="e9y-8j-zhp" id="GVi-VQ-NNW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -54,6 +61,21 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0B-7T-fJW">
+                    <rect key="frame" x="360" y="54" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="eOe-16-Ucb"/>
+                        <constraint firstAttribute="height" constant="44" id="hNJ-ji-2UH"/>
+                    </constraints>
+                    <state key="normal" image="star" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        </preferredSymbolConfiguration>
+                    </state>
+                    <connections>
+                        <action selector="makeFavorite:" destination="-1" eventType="touchUpInside" id="Lvp-aM-mOt"/>
+                    </connections>
+                </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Resumo" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qgV-Yo-ZI7">
                     <rect key="frame" x="20" y="343" width="374" height="270"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -72,6 +94,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wDd-Gc-hhg" secondAttribute="trailing" constant="20" id="AAv-kK-jdg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qgV-Yo-ZI7" secondAttribute="trailing" constant="20" id="ATl-QZ-Egu"/>
                 <constraint firstItem="8RZ-WM-XFg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Bdx-Qc-QIl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="s0B-7T-fJW" secondAttribute="trailing" constant="10" id="D2E-Zp-sH9"/>
                 <constraint firstItem="HFI-IE-V4K" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="K9a-fl-v8G"/>
                 <constraint firstItem="ta4-Q5-Tsh" firstAttribute="leading" secondItem="e9y-8j-zhp" secondAttribute="trailing" constant="10" id="Nlr-gN-ORm"/>
                 <constraint firstItem="HFI-IE-V4K" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Qyr-dC-ShS"/>
@@ -82,6 +105,7 @@
                 <constraint firstItem="qgV-Yo-ZI7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Z3D-IU-mfu"/>
                 <constraint firstItem="qgV-Yo-ZI7" firstAttribute="top" secondItem="e9y-8j-zhp" secondAttribute="bottom" constant="20" id="e4n-bk-pPV"/>
                 <constraint firstItem="e9y-8j-zhp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="iwt-IL-cpv"/>
+                <constraint firstItem="s0B-7T-fJW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="jPI-JM-jUb"/>
                 <constraint firstItem="e9y-8j-zhp" firstAttribute="top" secondItem="HFI-IE-V4K" secondAttribute="bottom" constant="25" id="nm1-O0-EYo"/>
                 <constraint firstItem="fUX-wC-66v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ovm-Qc-xsI"/>
                 <constraint firstItem="wDd-Gc-hhg" firstAttribute="top" secondItem="8RZ-WM-XFg" secondAttribute="bottom" constant="20" id="pGt-aU-WYu"/>
@@ -93,6 +117,7 @@
         </view>
     </objects>
     <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

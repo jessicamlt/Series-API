@@ -8,6 +8,15 @@
 import UIKit
 
 class DetailScreenViewController: UIViewController {
+    
+    @IBOutlet var backdropImageView: UIImageView!
+    @IBOutlet var favoriteButton: UIButton!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var overviewTextView: UITextView!
+    @IBOutlet var genresLabel: UILabel!
+    @IBOutlet var releaseLabel: UILabel!
+    @IBOutlet var countryLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,14 +25,8 @@ class DetailScreenViewController: UIViewController {
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func makeFavorite(_ sender: UIButton) {
     }
-    */
+    
 
 }

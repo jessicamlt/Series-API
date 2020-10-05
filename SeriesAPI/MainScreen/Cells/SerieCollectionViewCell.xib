@@ -47,6 +47,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             </preferredSymbolConfiguration>
                         </state>
+                        <connections>
+                            <action selector="makeFavorite:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Teh-An-Iqh"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
@@ -66,6 +69,12 @@
                 <constraint firstItem="aSv-Cu-yC6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="wy5-J5-5Ku"/>
             </constraints>
             <size key="customSize" width="242" height="331"/>
+            <connections>
+                <outlet property="favoriteButton" destination="PNZ-e7-VVF" id="W3A-dR-d9q"/>
+                <outlet property="posterImageView" destination="4oU-ZL-Lbc" id="svE-RX-pp8"/>
+                <outlet property="statusLabel" destination="aSv-Cu-yC6" id="WTc-YW-zMr"/>
+                <outlet property="titleLabel" destination="rKF-bi-4iN" id="32m-Zx-cPS"/>
+            </connections>
             <point key="canvasLocation" x="279.71014492753625" y="212.61160714285714"/>
         </collectionViewCell>
     </objects>
